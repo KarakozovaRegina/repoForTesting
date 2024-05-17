@@ -1,0 +1,147 @@
+2024-04-24 17:39:48,279 DEBUG - Starting WinSW in the service mode
+2024-04-24 17:39:48,491 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8080 --webroot="C:\ProgramData\Jenkins\war"
+2024-04-24 17:39:48,501 INFO  - Extension loaded: killOnStartup
+2024-04-24 17:39:48,506 WARN  - The requested PID file 'C:\ProgramData\Jenkins\jenkins.pid' does not exist. The runaway process won't be checked
+2024-04-24 17:39:48,539 INFO  - Started process 28776
+2024-04-24 17:39:48,551 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-04-24 17:39:48,556 INFO  - Recording PID of the started process:28776. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
+2024-04-24 17:39:48,570 ERROR - Cannot update the PID file C:\ProgramData\Jenkins\jenkins.pid
+System.IO.DirectoryNotFoundException: Не удалось найти часть пути "C:\ProgramData\Jenkins\jenkins.pid".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   в System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   в winsw.Plugins.RunawayProcessKiller.RunawayProcessKillerExtension.OnProcessStarted(Process process)
+2024-04-24 17:41:28,572 DEBUG - Starting WinSW in the service mode
+2024-04-24 17:41:30,980 DEBUG - Completed. Exit code is 0
+2024-04-24 17:56:44,306 DEBUG - Starting WinSW in the service mode
+2024-04-24 17:56:46,423 DEBUG - Completed. Exit code is 0
+2024-04-24 17:56:55,463 DEBUG - Starting WinSW in the service mode
+2024-04-24 17:57:04,824 DEBUG - Completed. Exit code is 0
+2024-04-24 17:59:07,191 INFO  - Stopping jenkins
+2024-04-24 17:59:07,192 DEBUG - ProcessKill 28776
+2024-04-24 17:59:07,429 INFO  - Found child process: 18632 Name: conhost.exe
+2024-04-24 17:59:07,533 INFO  - Stopping process 18632
+2024-04-24 17:59:07,547 INFO  - Send SIGINT 18632
+2024-04-24 17:59:07,549 WARN  - SIGINT to 18632 failed - Killing as fallback
+2024-04-24 17:59:07,550 INFO  - Stopping process 28776
+2024-04-24 17:59:07,563 INFO  - Send SIGINT 28776
+2024-04-24 17:59:07,563 WARN  - SIGINT to 28776 failed - Killing as fallback
+2024-04-24 17:59:07,567 INFO  - Finished jenkins
+2024-04-24 17:59:07,569 DEBUG - Completed. Exit code is 0
+2024-04-24 17:59:08,641 DEBUG - Starting WinSW in the service mode
+2024-04-24 17:59:08,663 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8080 --webroot="C:\ProgramData\Jenkins\war"
+2024-04-24 17:59:08,674 INFO  - Extension loaded: killOnStartup
+2024-04-24 17:59:08,682 WARN  - The requested PID file 'C:\ProgramData\Jenkins\jenkins.pid' does not exist. The runaway process won't be checked
+2024-04-24 17:59:08,704 INFO  - Started process 23032
+2024-04-24 17:59:08,713 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-04-24 17:59:08,718 INFO  - Recording PID of the started process:23032. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
+2024-04-24 21:29:09,554 INFO  - Stopping jenkins
+2024-04-24 21:29:09,555 DEBUG - ProcessKill 23032
+2024-04-24 21:29:09,756 INFO  - Found child process: 23240 Name: conhost.exe
+2024-04-24 21:29:09,846 INFO  - Stopping process 23240
+2024-04-24 21:29:09,858 INFO  - Send SIGINT 23240
+2024-04-24 21:29:09,860 WARN  - SIGINT to 23240 failed - Killing as fallback
+2024-04-24 21:29:09,861 INFO  - Stopping process 23032
+2024-04-24 21:29:09,872 INFO  - Send SIGINT 23032
+2024-04-24 21:29:09,873 WARN  - SIGINT to 23032 failed - Killing as fallback
+2024-04-24 21:29:09,875 INFO  - Finished jenkins
+2024-04-24 21:29:09,877 DEBUG - Completed. Exit code is 0
+2024-04-24 21:29:18,705 DEBUG - Starting WinSW in the service mode
+2024-04-24 21:29:18,732 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8081 --webroot="C:\ProgramData\Jenkins\war"
+2024-04-24 21:29:18,743 INFO  - Extension loaded: killOnStartup
+2024-04-24 21:29:18,749 DEBUG - Checking the potentially runaway process with PID=23032
+2024-04-24 21:29:18,818 DEBUG - No runaway process with PID=23032. The process has been already stopped.
+2024-04-24 21:29:18,844 INFO  - Started process 9940
+2024-04-24 21:29:18,851 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-04-24 21:29:18,855 INFO  - Recording PID of the started process:9940. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
+2024-04-24 23:39:43,090 INFO  - Stopping jenkins
+2024-04-24 23:39:43,105 DEBUG - ProcessKill 9940
+2024-04-24 23:39:43,230 WARN  - Failed to locate children of the process with PID=9940. Child processes won't be terminated
+System.Runtime.InteropServices.COMException (0x8007045B): Идет завершение работы системы.
+
+   в System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   в System.Management.ManagementScope.InitializeGuts(Object o)
+   в System.Management.ManagementScope.Initialize()
+   в System.Management.ManagementObjectSearcher.Initialize()
+   в System.Management.ManagementObjectSearcher.Get()
+   в winsw.Util.ProcessHelper.GetChildPids(Int32 pid)
+2024-04-24 23:39:43,277 INFO  - Stopping process 9940
+2024-04-24 23:39:43,277 INFO  - Send SIGINT 9940
+2024-04-24 23:39:43,433 INFO  - SIGINT to 9940 successful
+2024-04-24 23:39:43,449 INFO  - Finished jenkins
+2024-04-24 23:39:43,449 DEBUG - Completed. Exit code is 0
+2024-04-24 23:40:13,617 DEBUG - Starting WinSW in the service mode
+2024-04-24 23:40:13,677 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8081 --webroot="C:\ProgramData\Jenkins\war"
+2024-04-24 23:40:13,688 INFO  - Extension loaded: killOnStartup
+2024-04-24 23:40:13,698 DEBUG - Checking the potentially runaway process with PID=9940
+2024-04-24 23:40:13,728 DEBUG - No runaway process with PID=9940. The process has been already stopped.
+2024-04-24 23:40:13,759 INFO  - Started process 6904
+2024-04-24 23:40:13,769 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-04-24 23:40:13,777 INFO  - Recording PID of the started process:6904. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
+2024-04-28 18:35:47,551 INFO  - Stopping jenkins
+2024-04-28 18:35:47,551 DEBUG - ProcessKill 6904
+2024-04-28 18:35:47,702 WARN  - Failed to locate children of the process with PID=6904. Child processes won't be terminated
+System.Runtime.InteropServices.COMException (0x8007045B): Идет завершение работы системы.
+
+   в System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   в System.Management.ManagementScope.InitializeGuts(Object o)
+   в System.Management.ManagementScope.Initialize()
+   в System.Management.ManagementObjectSearcher.Initialize()
+   в System.Management.ManagementObjectSearcher.Get()
+   в winsw.Util.ProcessHelper.GetChildPids(Int32 pid)
+2024-04-28 18:35:47,718 INFO  - Stopping process 6904
+2024-04-28 18:35:47,734 INFO  - Send SIGINT 6904
+2024-04-28 18:35:47,937 INFO  - SIGINT to 6904 successful
+2024-04-28 18:35:47,937 INFO  - Finished jenkins
+2024-04-28 18:35:47,952 DEBUG - Completed. Exit code is 0
+2024-04-28 18:36:15,448 DEBUG - Starting WinSW in the service mode
+2024-04-28 18:36:15,495 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8081 --webroot="C:\ProgramData\Jenkins\war"
+2024-04-28 18:36:15,510 INFO  - Extension loaded: killOnStartup
+2024-04-28 18:36:15,510 DEBUG - Checking the potentially runaway process with PID=6904
+2024-04-28 18:36:15,548 DEBUG - No runaway process with PID=6904. The process has been already stopped.
+2024-04-28 18:36:15,564 INFO  - Started process 6944
+2024-04-28 18:36:15,579 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-04-28 18:36:15,579 INFO  - Recording PID of the started process:6944. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
+2024-05-07 17:21:47,991 DEBUG - Starting WinSW in the service mode
+2024-05-07 17:21:48,038 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8081 --webroot="C:\ProgramData\Jenkins\war"
+2024-05-07 17:21:48,038 INFO  - Extension loaded: killOnStartup
+2024-05-07 17:21:48,038 DEBUG - Checking the potentially runaway process with PID=6944
+2024-05-07 17:21:48,076 DEBUG - No runaway process with PID=6944. The process has been already stopped.
+2024-05-07 17:21:48,107 INFO  - Started process 3744
+2024-05-07 17:21:48,107 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-05-07 17:21:48,123 INFO  - Recording PID of the started process:3744. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
+2024-05-11 19:04:37,200 DEBUG - Starting WinSW in the service mode
+2024-05-11 19:04:37,247 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8081 --webroot="C:\ProgramData\Jenkins\war"
+2024-05-11 19:04:37,263 INFO  - Extension loaded: killOnStartup
+2024-05-11 19:04:37,278 DEBUG - Checking the potentially runaway process with PID=3744
+2024-05-11 19:04:37,301 DEBUG - No runaway process with PID=3744. The process has been already stopped.
+2024-05-11 19:04:37,332 INFO  - Started process 4728
+2024-05-11 19:04:37,332 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-05-11 19:04:37,347 INFO  - Recording PID of the started process:4728. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
+2024-05-11 19:04:47,133 INFO  - Stopping jenkins
+2024-05-11 19:04:47,133 DEBUG - ProcessKill 4728
+2024-05-11 19:04:47,196 WARN  - Failed to locate children of the process with PID=4728. Child processes won't be terminated
+System.Runtime.InteropServices.COMException (0x80040154): Класс не зарегистрирован
+
+   в System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   в System.Management.ManagementScope.InitializeGuts(Object o)
+   в System.Management.ManagementScope.Initialize()
+   в System.Management.ManagementObjectSearcher.Initialize()
+   в System.Management.ManagementObjectSearcher.Get()
+   в winsw.Util.ProcessHelper.GetChildPids(Int32 pid)
+2024-05-11 19:04:47,211 INFO  - Stopping process 4728
+2024-05-11 19:04:47,211 INFO  - Send SIGINT 4728
+2024-05-11 19:04:47,242 INFO  - SIGINT to 4728 successful
+2024-05-11 19:04:47,242 INFO  - Finished jenkins
+2024-05-11 19:04:47,252 DEBUG - Completed. Exit code is 0
+2024-05-11 19:05:11,450 DEBUG - Starting WinSW in the service mode
+2024-05-11 19:05:11,823 INFO  - Starting C:\Program Files\Java\jdk-17\\bin\java.exe -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\ForLabTesting\jenkins.war" --httpPort=8081 --webroot="C:\ProgramData\Jenkins\war"
+2024-05-11 19:05:11,854 INFO  - Extension loaded: killOnStartup
+2024-05-11 19:05:11,870 DEBUG - Checking the potentially runaway process with PID=4728
+2024-05-11 19:05:11,975 DEBUG - No runaway process with PID=4728. The process has been already stopped.
+2024-05-11 19:05:12,269 INFO  - Started process 3208
+2024-05-11 19:05:12,287 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2024-05-11 19:05:12,289 INFO  - Recording PID of the started process:3208. PID file destination is C:\ProgramData\Jenkins\jenkins.pid
