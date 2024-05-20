@@ -7,20 +7,18 @@ const HomePage = require("./HomePage.js");
   let homePage = new HomePage(driver);
 
   try {
-        // Тест на посик
+    // Тест на посик
     await driver.get("https://randewoo.ru/");
     await homePage.waitSeconds(2);
-    await homePage.inputSeach('KILIAN');
+    await homePage.inputSeach("KILIAN");
     await homePage.waitSeconds(2);
     await homePage.clickSeachButton();
     await homePage.waitSeconds(4);
 
     // Проверка, что продукт находится в корзине
     const isProductAdded = await homePage.isProductInPage();
-    assert.strictEqual(isProductAdded, true, 'Продукт найден');
+    assert.strictEqual(isProductAdded, true, "Продукт найден");
     console.log("Успешный поиск");
-
-
 
     // Тест на отправку почты
     await homePage.waitSeconds(2);
@@ -31,8 +29,6 @@ const HomePage = require("./HomePage.js");
     await homePage.clickEmailButton();
     await homePage.waitSeconds(7);
     console.log("Успешно отправка почты");
-
-
   } finally {
     await driver.quit();
   }
