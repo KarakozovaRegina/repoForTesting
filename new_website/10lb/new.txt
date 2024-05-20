@@ -1,0 +1,13 @@
+
+
+создание package.json
+npm init -y
+
+установка необходимых зависимостей :
+npm install
+
+установка selenium-webdriver
+npm install selenium-webdriver
+
+запуск 
+npm test
